@@ -39,6 +39,7 @@ RUN pip3 install --quiet --upgrade pip && \
     pip3 install --quiet pytest
 
 RUN ansible-galaxy collection install community.general
+RUN ansible-galaxy collection install community.crypto
 
 RUN apk del --no-cache --quiet \
       build-base \
